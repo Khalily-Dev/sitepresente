@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f2f2f2;
+  --cor-terciaria: #b6b09f;
+  --cor-hover: #eae4d5;
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  text-align: center;
+}
+
+.Cabecalho {
+  padding: 2% 5%;
+}
+
+.Cabecalho__Menu {
+  display: flex;
+  gap: 30px;
+  font-size: 2.125rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Cabecalho__menu__link {
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+  font-size: 1.625rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Cabecalho__menu__link:hover {
+  color: var(--cor-hover);
+}
+
+.Apresentacao {
+  padding: 5% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.Apresentacao_mensagem {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.Apresentacao_texto {
+  font-size: 1.875rem;
+  font-family: var(--fonte-primaria);
+  color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+  line-height: 1.5;
+}
+
+.imagem_casal {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.rodape {
+  font-size: 1.125rem;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  text-align: center;
+  padding: 2%;
+}
+
+@media (max-width: 1024px) {
+  .Apresentacao {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .Apresentacao_mensagem {
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .Apresentacao_texto {
+    font-size: 1.5rem;
+  }
+
+  .apresentacao__conteudo__texto {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Cabecalho__Menu {
+    font-size: 1.2rem;
+    gap: 15px;
+  }
+
+  .Apresentacao_texto {
+    font-size: 1.3rem;
+  }
+
+  .apresentacao__conteudo__texto {
+    font-size: 1rem;
+  }
+}

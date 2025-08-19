@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f2f2f2;
+  --cor-terciaria: #b6b09f;
+  --cor-hover: #eae4d5;
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  text-align: center;
+}
+
+.Cabecalho {
+  padding: 2% 5%;
+}
+
+.Cabecalho__Menu {
+  display: flex;
+  gap: 30px;
+  font-size: 2.125rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Cabecalho__menu__link {
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+  font-size: 1.625rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Cabecalho__menu__link:hover {
+  color: var(--cor-hover);
+}
+.Apresentacao {
+  padding: 8% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.apresentacao__conteudo {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.apresentacao__conteudo__mensagem {
+  font-size: 1.875rem;
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-terciaria);
+  margin: 10px 0 30px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.rodape {
+  font-size: 1.125rem;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  text-align: center;
+  padding: 2%;
+}
+
+.Kuromi {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .Cabecalho {
+    justify-content: center;
+  }
+  .Cabecalho__Menu {
+    font-size: 1.5rem;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Cabecalho__Menu {
+    font-size: 1.3rem;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Cabecalho__Menu {
+    font-size: 1.1rem;
+    gap: 10px;
+  }
+}
